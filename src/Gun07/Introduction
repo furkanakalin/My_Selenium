@@ -1,0 +1,57 @@
+CSSSelector      [id='first_8']
+XPath     //input[@id='first_8']
+
+tüm sayfayı tarıyor,tüm sayfayı analiz
+ederek buluyor, o yzden CSS e göre
+biraz yavaş
+
+çocuklar nasıl deniyor
+tüm çocuklar nasıl deniyor
+bitiş kardeş
+tüm kardeşler
+
+3.Çocuk nasıl deniyor
+
+/********************************************/
+
+Locator Bulma Stratejisi
+1- id si var , 2-name var önce onları kullan
+  yok ise
+3- özel class ı var ise onu kullan
+  yok ise
+4,5- a tag i ise LinkText veya PartialLinkText kullan
+  değilse
+6-tüm belli tag deki elemanlar lazım ise TAG ile
+  bulmayı kullan
+
+Eğer elemanın yukarıdaki attribute ları yok ise
+1-Css Selector git : en hızlı ve tarayıcı uyumlu
+
+Eğer Geri gitmen gerekiyor ise,
+Eğer Textinden bulman gerekiyor ise,
+Eğer tüm sayfada n.ci eleman olarak bulman gerekiyor ise
+XPATH e git.
+
+Elemanın kendisine direk ulaşamıyorsan, en yakın sağlam
+locator lı elemanı bul , ondan elemana ilerle.
+
+/********************************************/
+
+İnterview larda soruyorlar
+Locator bulma Stratejin nedir ?
+1- id
+2- name
+3- class
+4- LinkText(a)
+5- PartialLinkText(a)
+6- Tag ile bulurum
+7- Css Selector
+8- Xpath
+
+Şirketler ne yapıyor pratikte ?
+Benim prgramlarım düzenli olsun diyor
+madem bir şekilde hep XPath lazım oluyor,
+hepsi XPATH olsun diyor.
+
+By.id("first8");
+By.Xpath("//input[@id='first8']");
